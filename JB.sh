@@ -694,10 +694,10 @@ if [ $initialChoice = 3 ]; then
 		                git checkout $branchName
 		                git add .
 		                git commit -m"Pull request for new Juypter Book for '$userName'"
-				git fetch
+						git fetch
 		                gh pr create
-				git checkout main
-				git branch -D $branchName
+						git checkout main
+						git branch -D $branchName
 		                cd
 			else
 				cd
